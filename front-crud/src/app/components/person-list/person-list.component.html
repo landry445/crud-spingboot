@@ -1,0 +1,18 @@
+<h2>Liste des personnes</h2>
+<table>
+  <tr>
+    <th>Nom</th>
+    <th>Ville</th>
+    <th>Téléphone</th>
+    <th>Actions</th>
+  </tr>
+  <tr *ngFor="let person of persons">
+    <td>{{ person.name }}</td>
+    <td>{{ person.city }}</td>
+    <td>{{ person.phoneNumber }}</td>
+    <td>
+      <!-- Tu pourras plus tard lier aux actions "modifier" -->
+      <button (click)="deletePerson(person.id!)">Supprimer</button>
+    </td>
+  </tr>
+</table>

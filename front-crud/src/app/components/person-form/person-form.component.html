@@ -1,0 +1,14 @@
+
+<h2>Ajouter une personne</h2>
+<form (ngSubmit)="onSubmit()">
+  <label>Nom:</label>
+  <input [(ngModel)]="person.name" name="name" required />
+
+  <label>Ville:</label>
+  <input [(ngModel)]="person.city" name="city" required />
+
+  <label>Téléphone:</label>
+  <input [(ngModel)]="person.phoneNumber" name="phoneNumber" required />
+
+  <button type="submit">Ajouter</button>
+</form>
